@@ -41,15 +41,21 @@ namespace RingCentralSDKTest
                     new MessageStoreCallerInfoRequest { PhoneNumber = Config.Instance.Receiver }
                 },
             };
-            var request = new Request("/restapi/v1.0/account/~/extension/~/sms", JsonConvert.SerializeObject(requestModel));
+            var request = new Request("/restapi/v1.0/account/~/extension/~/sms", requestModel.ToJson());
             var response = platform.Post(request);
             var responseJson = response.GetBody();
             var responseModel = JsonConvert.DeserializeObject<GetMessageInfoResponse>(responseJson);
+            Debug.WriteLine(responseModel);
         }
 
         private void Query_Call_Log(object sender, RoutedEventArgs e)
         {
             Authenticate();
+            var request = new Request("/restapi/v1.0/account/~/extension/~/call-log");
+            var response = platform.Get(request);
+            var responseJson = response.GetBody();
+            var responseModel = JsonConvert.DeserializeObject<ExtensionCallLogResponse>(responseJson);
+            Debug.WriteLine(responseModel);
         }
 
         private void Query_Message_Store(object sender, RoutedEventArgs e)
