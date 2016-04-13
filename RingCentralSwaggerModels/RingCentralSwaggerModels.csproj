@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77977C1A-5CD3-4E1F-A3D1-4A01712BEA35}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RingCentralSwaggerModels</RootNamespace>
+    <AssemblyName>RingCentralSwaggerModels</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AccountStatusInfo.cs" />
+    <Compile Include="BillingPlanInfo.cs" />
+    <Compile Include="BrandInfo.cs" />
+    <Compile Include="CallLogCallerInfo.cs" />
+    <Compile Include="CallLogRecord.cs" />
+    <Compile Include="CallLogRecordLegInfo.cs" />
+    <Compile Include="ContactAddressInfo.cs" />
+    <Compile Include="ContactInfo.cs" />
+    <Compile Include="CountryInfo.cs" />
+    <Compile Include="CreateFaxMessageRequest.cs" />
+    <Compile Include="CreatePagerMessageRequest.cs" />
+    <Compile Include="CreateSMSMessage.cs" />
+    <Compile Include="CreateSubscriptionRequest.cs" />
+    <Compile Include="DepartmentInfo.cs" />
+    <Compile Include="ExtensionActiveCallsResponse.cs" />
+    <Compile Include="ExtensionCallLogResponse.cs" />
+    <Compile Include="ExtensionInfo.cs" />
+    <Compile Include="ExtensionInfoCallLog.cs" />
+    <Compile Include="ExtensionPermissions.cs" />
+    <Compile Include="ExtensionServiceFeatureInfo.cs" />
+    <Compile Include="ExtensionStatusInfo.cs" />
+    <Compile Include="FormattingLocaleInfo.cs" />
+    <Compile Include="ForwardingNumberInfo.cs" />
+    <Compile Include="GetAccountInfoResponse.cs" />
+    <Compile Include="GetCallRecordingResponse.cs" />
+    <Compile Include="GetCountryInfoDictionaryResponse.cs" />
+    <Compile Include="GetCountryInfoState.cs" />
+    <Compile Include="GetCountryListResponse.cs" />
+    <Compile Include="GetExtensionCallLogRecordResponse.cs" />
+    <Compile Include="GetExtensionForwardingNumberListResponse.cs" />
+    <Compile Include="GetExtensionInfoResponse.cs" />
+    <Compile Include="GetExtensionListResponse.cs" />
+    <Compile Include="GetExtensionPhoneNumbersResponse.cs" />
+    <Compile Include="GetLocationListResponse.cs" />
+    <Compile Include="GetMessageInfoResponse.cs" />
+    <Compile Include="GetMessageList.cs" />
+    <Compile Include="GetPresenceExtensionInfo.cs" />
+    <Compile Include="GetPresenceInfo.cs" />
+    <Compile Include="GetRingOutStatusResponse.cs" />
+    <Compile Include="GetStateInfoResponse.cs" />
+    <Compile Include="GetStateListResponse.cs" />
+    <Compile Include="GetSubscriptionInfoResponse.cs" />
+    <Compile Include="GetTimezoneInfoResponse.cs" />
+    <Compile Include="GetTimezoneListResponse.cs" />
+    <Compile Include="GetVersionResponse.cs" />
+    <Compile Include="GetVersionsResponse.cs" />
+    <Compile Include="GreetingLanguageInfo.cs" />
+    <Compile Include="LanguageInfo.cs" />
+    <Compile Include="LocationInfo.cs" />
+    <Compile Include="MakeRingOutCallerInfoRequestFrom.cs" />
+    <Compile Include="MakeRingOutCallerInfoRequestTo.cs" />
+    <Compile Include="MakeRingOutCoutryInfo.cs" />
+    <Compile Include="MakeRingOutRequest.cs" />
+    <Compile Include="MessageAttachmentInfo.cs" />
+    <Compile Include="MessageStoreCallerInfoRequest.cs" />
+    <Compile Include="MessageStoreCallerInfoResponse.cs" />
+    <Compile Include="ModifySubscriptionRequest.cs" />
+    <Compile Include="NavigationInfo.cs" />
+    <Compile Include="NotificationDeliveryMode.cs" />
+    <Compile Include="NotificationDeliveryModeRequest.cs" />
+    <Compile Include="PagingInfo.cs" />
+    <Compile Include="PermissionInfo.cs" />
+    <Compile Include="PhoneNumberInfo.cs" />
+    <Compile Include="ProfileImageInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordingInfo.cs" />
+    <Compile Include="ReferenceInfo.cs" />
+    <Compile Include="RegionalSettings.cs" />
+    <Compile Include="RingOutStatusInfo.cs" />
+    <Compile Include="ServiceInfo.cs" />
+    <Compile Include="ServicePlanInfo.cs" />
+    <Compile Include="TargetServicePlanInfo.cs" />
+    <Compile Include="TimezoneInfo.cs" />
+    <Compile Include="UpdateMessageRequest.cs" />
+    <Compile Include="VersionInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

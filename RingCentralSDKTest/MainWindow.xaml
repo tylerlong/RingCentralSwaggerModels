@@ -1,0 +1,15 @@
+﻿<Window x:Class="RingCentralSDKTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RingCentralSDKTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="button" Content="Send a SMS" HorizontalAlignment="Center" Margin="0,64,0,0" VerticalAlignment="Top"  Click="Send_a_SMS"/>
+        <Button x:Name="button1" Content="Query Call Log" HorizontalAlignment="Center" Margin="0,128,0,0" VerticalAlignment="Top" Click="Query_Call_Log"/>
+        <Button x:Name="button2" Content="Query Message Store" HorizontalAlignment="Center" Margin="0,192,0,0" VerticalAlignment="Top" Click="Query_Message_Store"/>
+        <Button x:Name="button3" Content="Update Message Read Status" HorizontalAlignment="Center" Margin="0,256,0,0" VerticalAlignment="Top" Click="Update_Message_Read_Status"/>
+    </Grid>
+</Window>
